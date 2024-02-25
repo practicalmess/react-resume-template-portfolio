@@ -1,28 +1,21 @@
-import {
-  AcademicCapIcon,
-  ArrowDownTrayIcon,
-  BuildingOffice2Icon,
-  FlagIcon,
-  IdentificationIcon,
-  MapIcon,
-  SparklesIcon,
-} from '@heroicons/react/24/outline';
+import {ArrowDownTrayIcon, BuildingOffice2Icon, IdentificationIcon, MapIcon} from '@heroicons/react/24/outline';
+import {StaticImageData} from 'next/image';
 import React from 'react';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import testimonialImage from '../images/deep-jellyfish.jpeg';
+import portfolioImage from '../images/deep-jellyfish.jpeg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage4 from '../images/portfolio/portfolio-4.png';
+import porfolioImage5 from '../images/portfolio/portfolio-5.png';
+// import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import heroImage from '../images/sea-turtle.jpeg';
 import {
@@ -185,6 +178,7 @@ export const skills: SkillGroup[] = [
 /**
  * Portfolio section
  */
+
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Project title 1',
@@ -198,24 +192,24 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://reactresume.com',
     image: porfolioImage2,
   },
+  // {
+  //   title: 'Project title 3',
+  //   description: 'Give a short description of your project here.',
+  //   url: 'https://reactresume.com',
+  //   image: porfolioImage3,
+  // },
   {
-    title: 'Project title 3',
+    title: 'Project title 4',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage3,
+    image: porfolioImage4,
   },
-  // {
-  //   title: 'Project title 4',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage4,
-  // },
-  // {
-  //   title: 'Project title 5',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage5,
-  // },
+  {
+    title: 'Project title 5',
+    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage5,
+  },
   // {
   //   title: 'Project title 6',
   //   description: 'Give a short description of your project here.',
@@ -253,6 +247,11 @@ export const portfolioItems: PortfolioItem[] = [
   //   image: porfolioImage11,
   // },
 ];
+
+export const portfolioInfo: {src: string | StaticImageData; items: PortfolioItem[]} = {
+  src: portfolioImage,
+  items: portfolioItems,
+};
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
@@ -298,7 +297,7 @@ export const experience: TimelineItem[] = [
  * Testimonial section
  */
 export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
+  imageSrc: portfolioImage,
   testimonials: [
     {
       name: 'John Doe',

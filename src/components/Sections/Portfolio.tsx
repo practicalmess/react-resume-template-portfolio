@@ -1,32 +1,19 @@
 import {ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
-import React, {FC, memo, MouseEvent, useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import React, {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 
 import {isMobile} from '../../config';
 import {portfolioItems, SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
-import portfolioBackground from '../../images/deep-jellyfish.jpeg';
+// import portfolioBackground from '../../images/deep-jellyfish.jpeg';
 import Section from '../Layout/Section';
 
 const Portfolio: FC = memo(() => {
-  const resolveSrc = useMemo(() => {
-    if (!portfolioBackground) return undefined;
-    return typeof portfolioBackground === 'string' ? portfolioBackground : portfolioBackground.src;
-  }, []);
   return (
     <Section sectionId={SectionId.Portfolio}>
-      <div className="flex flex-col gap-y-8" style={{backgroundImage: `url(${resolveSrc}`}}>
-        <div>
-          <Image
-            alt={`${name}-image`}
-            className="absolute z-0 h-full w-full object-cover"
-            placeholder="blur"
-            priority
-            src={portfolioBackground}
-          />
-        </div>
+      <div className="flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
         <div
           className={classNames(
@@ -57,7 +44,7 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
+export const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
   const [mobile, setMobile] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
