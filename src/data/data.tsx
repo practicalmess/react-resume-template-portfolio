@@ -35,8 +35,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Sid Hackney - Full Service Web Solutions',
-  description: "Sid Hackney's professional web development portfolio",
+  title: "Sid's Home Studio",
+  description: "Sid Hackney's professional, bespoke web solutions",
 };
 
 /**
@@ -60,13 +60,19 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Sid Hackney`,
+  name: "Sid's Home Studio",
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Boston based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        with <strong className="text-stone-100">Focus Consulting</strong> helping build modern, accessible web apps with
-        a social mission.
+        Hi, I'm Sid! I'm a Boston based <strong className="text-stone-100">Full Stack Web Developer</strong> with
+        experience building web solutions for e-commerce, government, small businesses, and local non-profits. My
+        passion is making the web more <strong className="text-stone-100">accessible for everyone</strong>, whether they
+        want to browse as a user or build something entirely new to share with the world.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        My goal is to be able to find a solution for every budget, from a brief consultation to a fully managed website
+        with ongoing maintenance and support.{' '}
+        <strong className="text-stone-100">Step into the studio and let's make something together!</strong>
       </p>
     </>
   ),
