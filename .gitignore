@@ -6,9 +6,7 @@
 .pnp.js
 .yarn
 
-*.png
-*.jpeg
-*.jpg
+
 */assets/*
 
 # testing
