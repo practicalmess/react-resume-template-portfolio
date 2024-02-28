@@ -79,7 +79,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           name: nextjs-build
-          path: _next
+          path: ./out
 
   # Deployment job
   deploy:
