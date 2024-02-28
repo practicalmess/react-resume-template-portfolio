@@ -80,6 +80,8 @@ jobs:
         with:
           name: nextjs-build
           path: ./out
+      - name: List contents of /out directory
+        run: ls -la ./out
 
   # Deployment job
   deploy:
