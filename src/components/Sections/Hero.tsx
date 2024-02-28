@@ -1,6 +1,5 @@
 import {ChevronDownIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
-import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {heroData, SectionId} from '../../data/data';
@@ -8,20 +7,13 @@ import Section from '../Layout/Section';
 import Socials from '../Socials';
 
 const Hero: FC = memo(() => {
-  const {imageSrc, name, description, actions} = heroData;
+  const {name, description, actions} = heroData;
 
   return (
     <Section className={SectionId.Hero} noPadding sectionId={SectionId.Hero}>
       <div className="relative flex h-screen w-full items-center justify-center">
         <div className="background orange"></div>
         <div className="background blue"></div>
-        {/* <Image
-          alt={`${name}-image`}
-          className="absolute z-0 h-full w-full object-cover"
-          placeholder="blur"
-          priority
-          src={imageSrc}
-        /> */}
         <div className="z-10  max-w-screen-lg px-4 lg:px-0">
           <div className="float-text flex flex-col items-center gap-y-6 rounded-xl p-6 text-center shadow-lg backdrop-blur-sm">
             <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">{name}</h1>
