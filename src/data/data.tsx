@@ -4,10 +4,12 @@ import React from 'react';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+// import heroImage from '../images/sea-turtle.jpeg';
+import heroImage from '../images/background-coral.jpg';
 import portfolioImage from '../images/deep-jellyfish.jpeg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
-import porfolioImage3 from '../images/portfolio/portfolio-3.png';
+// import porfolioImage3 from '../images/portfolio/portfolio-3.png';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 // import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
@@ -17,7 +19,6 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 // import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 // import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
-import heroImage from '../images/sea-turtle.jpeg';
 import {
   About,
   ContactSection,
@@ -60,14 +61,14 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: "Sid's Home Studio",
+  name: "Hi, I'm Sid",
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Hi, I'm Sid! I'm a Boston based <strong className="text-stone-100">Full Stack Web Developer</strong> with
-        experience building web solutions for e-commerce, government, small businesses, and local non-profits. My
-        passion is making the web more <strong className="text-stone-100">accessible for everyone</strong>, whether they
-        want to browse as a user or build something entirely new to share with the world.
+        I'm a Boston based <strong className="text-stone-100">Full Stack Web Developer</strong> with experience building
+        web solutions for e-commerce, government, small businesses, and local non-profits. My passion is making the web
+        more <strong className="text-stone-100">accessible for everyone</strong>, whether they want to browse as a user
+        or build something entirely new to share with the world.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         My goal is to be able to find a solution for every budget, from a brief consultation to a fully managed website
@@ -78,15 +79,15 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'https://snackney.nyc3.cdn.digitaloceanspaces.com/Freelance/Portfolio/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
-    {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
+      primary: true,
+    },
+    {
+      href: 'https://snackney.nyc3.cdn.digitaloceanspaces.com/Freelance/Portfolio/resume.pdf',
+      text: 'Resume',
       primary: false,
+      Icon: ArrowDownTrayIcon,
     },
   ],
 };
@@ -96,9 +97,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `With over four years of professional full stack development experience, I specialize in crafting user-friendly, accessible, and engaging web applications tailored to the diverse needs of audiences. I have extensive experience in many of the tools that power much of the internet today. Beyond technical prowess, my passion lies in web accessibility and user engagement. I find great joy in not only creating seamless web applications but also in demystifying the intricacies of maintaining a modern website. My goal is to make the digital landscape more approachable, ensuring that technology serves as an empowering tool rather than an intimidating barrier. Join me on this journey as we explore the intersection of technology, innovation, and creating meaningful user experiences that resonate with simplicity and accessibility.`,
   aboutItems: [
     {label: 'Location', text: 'Boston, MA', Icon: MapIcon},
     {label: 'Pronouns', text: 'they/them', Icon: IdentificationIcon},
@@ -187,8 +186,9 @@ export const skills: SkillGroup[] = [
 
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
+    title: 'PMRP Digital Program',
+    description:
+      'A responsive, single page displaying cast and crew information in the style of a paper program for the local theater group the Post Meridian Radio Players.',
     url: 'https://reactresume.com',
     image: porfolioImage1,
   },
@@ -336,14 +336,14 @@ export const contact: ContactSection = {
       text: 'hacksid.official@gmail.com',
       href: 'mailto:hacksid.official+portfolioleads@gmail.com',
     },
+    // {
+    //   type: ContactType.Location,
+    //   text: 'Boston, MA',
+    // },
     {
-      type: ContactType.Location,
-      text: 'Boston, MA',
-    },
-    {
-      type: ContactType.Github,
-      text: 'practicalmess',
-      href: 'https://github.com/practicalmess',
+      type: ContactType.LinkedIn,
+      text: 'Sid Hackney on LinkedIn',
+      href: 'https://www.linkedin.com/in/sidney-j-hackney/',
     },
   ],
 };

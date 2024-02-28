@@ -14,6 +14,13 @@
   }
 }
 
+$primary-color: #0468bf;
+$secondary-color: #9b2b03;
+$dark-color: #001939;
+$accent-color: #05f2f2;
+$highlight-color: #f27405;
+$light-color: #d5ffff;
+
 @supports (-webkit-touch-callout: none) {
   .h-screen {
     height: -webkit-fill-available;
@@ -32,10 +39,34 @@ html {
   height: 100vh;
 }
 
+.background:before {
+  background-image: url('images/coral-simple.svg');
+  background-repeat: no-repeat;
+  content: ' ';
+  position: absolute;
+  transform: rotate(-65deg);
+  height: 100%;
+  width: 200vw;
+
+  z-index: -1;
+}
+
+.orange:before {
+  filter: invert(68%) sepia(32%) saturate(7058%) hue-rotate(1deg) brightness(98%) contrast(97%) opacity(30%);
+  left: -40vw;
+  top: 40vh;
+}
+
+.blue:before {
+  filter: invert(72%) sepia(79%) saturate(1822%) hue-rotate(133deg) brightness(96%) contrast(97%);
+  left: -35vw;
+  top: 42vh;
+}
+
 body {
   position: relative;
   width: 100%;
-  color: #444444;
+  color: $dark-color;
   font-family:
     system-ui,
     -apple-system,
@@ -44,10 +75,16 @@ body {
     Ubuntu,
     'Helvetica Neue',
     sans-serif;
-  background-color: #fafafa;
-  #heroImage {
-    position: fixed;
-    z-index: -1;
+  // background-color: $light-color;
+  a {
+    color: $highlight-color;
+  }
+
+  .hero {
+    // background-image: url('images/coral-curls-simple.svg');
+  }
+  .float-text {
+    background-color: #001939ad;
   }
 }
 
