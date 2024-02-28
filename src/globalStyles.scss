@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Quattrocento:wght@700&display=swap');
+
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
@@ -43,7 +45,7 @@ html {
   background-image: url('images/coral-simple.svg');
   background-repeat: no-repeat;
   content: ' ';
-  position: absolute;
+  position: fixed;
   transform: rotate(-65deg);
   height: 100%;
   width: 200vw;
@@ -79,12 +81,26 @@ body {
   a {
     color: $highlight-color;
   }
-
-  .hero {
-    // background-image: url('images/coral-curls-simple.svg');
+  header {
+    background-color: #001939be;
   }
   .float-text {
     background-color: #001939ad;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Quattrocento', serif;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .light {
+    color: $light-color;
   }
 }
 

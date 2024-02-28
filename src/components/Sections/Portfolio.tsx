@@ -74,7 +74,10 @@ const Portfolio: FC = memo(() => {
         )}
         style={{backgroundImage: `url(${resolveSrc}`}}>
         <div className="z-10 w-full max-w-screen-md px-4 lg:px-0">
-          <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
+          <div className="float-text flex flex-col items-center gap-y-6 rounded-xl p-2 text-center shadow-lg backdrop-blur-sm">
+            {' '}
+            <h2 className="font-bold uppercase light">Portfolio</h2>
+          </div>
           <div
             className={classNames(
               'flex w-full items-center justify-center bg-cover bg-center px-4 py-16 md:py-24 lg:px-8 bg-fixed',
@@ -141,7 +144,9 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
           <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
           <p className="text-xs text-white opacity-100 sm:text-sm">{description}</p>
         </div>
-        <ArrowTopRightOnSquareIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-white sm:bottom-2 sm:right-2" />
+        {url && (
+          <ArrowTopRightOnSquareIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-white sm:bottom-2 sm:right-2" />
+        )}
       </div>
     </a>
   );

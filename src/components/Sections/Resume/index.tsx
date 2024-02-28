@@ -10,6 +10,10 @@ const Resume: FC = memo(() => {
   return (
     <Section className="bg-neutral-100" sectionId={SectionId.Resume}>
       <div className="flex flex-col divide-y-2 divide-neutral-300">
+        <div className="float-text flex flex-col items-center gap-y-6 rounded-xl p-2 text-center shadow-lg backdrop-blur-sm">
+          {' '}
+          <h2 className="font-bold uppercase light">Professional Experience</h2>
+        </div>
         <ResumeSection title="Work">
           {experience.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />

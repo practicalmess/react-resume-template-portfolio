@@ -4,20 +4,21 @@ import React from 'react';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+// import portfolioImage from '../images/deep-jellyfish.jpeg';
+// import portfolioImage from '../images/background-coral.jpg';
 // import heroImage from '../images/sea-turtle.jpeg';
 import heroImage from '../images/background-coral.jpg';
-import portfolioImage from '../images/deep-jellyfish.jpeg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.png';
-import porfolioImage2 from '../images/portfolio/portfolio-2.png';
-// import porfolioImage3 from '../images/portfolio/portfolio-3.png';
-import porfolioImage4 from '../images/portfolio/portfolio-4.png';
-import porfolioImage5 from '../images/portfolio/portfolio-5.png';
-// import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import portfolioImage1 from '../images/portfolio/portfolio-1.png';
+import portfolioImage2 from '../images/portfolio/portfolio-2.png';
+// import portfolioImage3 from '../images/portfolio/portfolio-3.png';
+import portfolioImage4 from '../images/portfolio/portfolio-4.png';
+import portfolioImage5 from '../images/portfolio/portfolio-5.png';
+// import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+// import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+// import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+// import portfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+// import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+// import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import {
   About,
@@ -189,70 +190,67 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'PMRP Digital Program',
     description:
       'A responsive, single page displaying cast and crew information in the style of a paper program for the local theater group the Post Meridian Radio Players.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
+    url: 'https://pmrp.org/static/plan9/program/',
+    image: portfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  // {
-  //   title: 'Project title 3',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage3,
-  // },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
+    title: 'Beat Box',
+    description:
+      'A multi-state mockup of a long scroll landing page for a fictional business based on a given design brief.',
+    // url: undefined,
+    image: portfolioImage2,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
+    title: 'The Unreal Doll Factory',
+    description: 'The homepage for my former Etsy business selling handmade dolls',
+    // url: null,
+    image: portfolioImage4,
+  },
+
+  {
+    title: 'The Boston Whovians',
+    description: 'The Boston Whovians website, originally built in Wordpress',
+    // url: null,
+    image: portfolioImage5,
   },
   // {
   //   title: 'Project title 6',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
-  //   image: porfolioImage6,
+  //   image: portfolioImage6,
   // },
   // {
   //   title: 'Project title 7',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
-  //   image: porfolioImage7,
+  //   image: portfolioImage7,
   // },
   // {
   //   title: 'Project title 8',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
-  //   image: porfolioImage8,
+  //   image: portfolioImage8,
   // },
   // {
   //   title: 'Project title 9',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
-  //   image: porfolioImage9,
+  //   image: portfolioImage9,
   // },
   // {
   //   title: 'Project title 10',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
-  //   image: porfolioImage10,
+  //   image: portfolioImage10,
   // },
   // {
   //   title: 'Project title 11',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
-  //   image: porfolioImage11,
+  //   image: portfolioImage11,
   // },
 ];
+const portfolioImage = heroImage;
 
 export const portfolioInfo: {src: string | StaticImageData; items: PortfolioItem[]} = {
   src: portfolioImage,
