@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "engines": {
-    "node": "18.18.2"
+    "node": "18.19.1"
   },
   "scripts": {
     "build": "yarn compile && yarn next build",
