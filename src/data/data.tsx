@@ -10,7 +10,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/background-coral.jpg';
 import portfolioImage1 from '../images/portfolio/portfolio-1.png';
 import portfolioImage2 from '../images/portfolio/portfolio-2.png';
-// import portfolioImage3 from '../images/portfolio/portfolio-3.png';
+import portfolioImage3 from '../images/portfolio/portfolio-3.png';
 import portfolioImage4 from '../images/portfolio/portfolio-4.png';
 import portfolioImage5 from '../images/portfolio/portfolio-5.png';
 // import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
@@ -199,6 +199,13 @@ export const portfolioItems: PortfolioItem[] = [
       'A multi-state mockup of a long scroll landing page for a fictional business based on a given design brief.',
     // url: undefined,
     image: portfolioImage2,
+  },
+  {
+    title: 'The Last Poster Show',
+    description:
+      'Homepage and digitized inventory for a family owned small business selling vintage movie memorabilia.',
+    url: 'https://thelastpostershow.com',
+    image: portfolioImage3,
   },
   {
     title: 'The Unreal Doll Factory',
